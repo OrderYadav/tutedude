@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TuteDude — HTML Learning Demo Page</title>
+  <meta name="description" content="TuteDude — HTML Learning Demo Page (Web Development with PHP/MySQL Assignment)" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Assignment content remains identical to previous HTML -->
+  <!-- HEADER -->
+  <header role="banner" aria-label="TuteDude header">
+    <h1>TuteDude — <mark>HTML Learning Demo Page</mark></h1>
+    <p class="meta"><em><strong>Practice project:</strong></em> Build a semantic HTML page...</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Courses Menu</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+        <li><a href="#extras">Extras</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="hero" aria-hidden="false">
+      <figure>
+        <img src="https://via.placeholder.com/800x300.png?text=TuteDude+Logo+Style" alt="TuteDude logo style hero image" />
+        <figcaption>Welcome to TuteDude — Learn Web Development step-by-step.</figcaption>
+      </figure>
+      <div>
+        <p><strong>Course:</strong> <time datetime="2025-11-27">November 27, 2025</time> — <em>Web Development with PHP/MySQL (Demo)</em></p>
+        <p>Student: <strong>Order Yadav</strong></p>
+        <p>This demo page shows semantic HTML usage...</p>
+        <p><a href="#feedback" class="btn">Submit Feedback / Assignment</a></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main role="main">
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About TuteDude</h2>
+      <article>
+        <p><strong>TuteDude</strong> is a fictional learning platform...</p>
+        <blockquote>“Learning by building real projects helps you retain skills faster than passive watching.”
+          <footer>- <cite>Senior Mentor, TuteDude</cite></footer>
+        </blockquote>
+      </article>
+    </section>
+
+    <!-- MENU & TRIVIA -->
+    <div class="grid-2">
+      <section id="menu" aria-labelledby="menu-heading">
+        <h2 id="menu-heading">Courses Menu</h2>
+        <!-- Table code (same as previous HTML) -->
+      </section>
+      <aside id="trivia" aria-labelledby="trivia-heading" role="complementary">
+        <h2 id="trivia-heading">Trivia & Extra Notes</h2>
+        <!-- Details code (same as previous HTML) -->
+      </aside>
+    </div>
+
+    <!-- EXTRAS: media -->
+    <section id="extras" aria-labelledby="extras-heading">
+      <h2 id="extras-heading">Extras — Audio & Video Examples</h2>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls width="560" height="315">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- FEEDBACK FORM -->
+    <section id="feedback" aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Feedback & Assignment Submission</h2>
+      <form id="assignment-form" action="#" method="post" accept-charset="utf-8">
+        <fieldset>
+          <legend>Student Details</legend>
+          <label for="student-name">Full name</label><br />
+          <input id="student-name" name="student-name" type="text" value="Order Yadav" required /><br /><br />
+          <label for="student-email">Email</label><br />
+          <input id="student-email" name="student-email" type="email" placeholder="you@example.com" required /><br /><br />
+          <label for="course-select">Course</label><br />
+          <select id="course-select" name="course-select">
+            <option value="php-mysql" selected>Web Development with PHP/MySQL</option>
+            <option value="frontend">Frontend Essentials</option>
+          </select><br /><br />
+          <label for="project-link">GitHub Repo Link</label><br />
+          <input id="project-link" name="project-link" type="url" placeholder="https://github.com/yourusername/nestjs-fundamentals" /><br /><br />
+          <label for="comments">Comments / Notes</label><br />
+          <textarea id="comments" name="comments" rows="5" placeholder="Any notes for the mentor..."></textarea><br /><br />
+          <button type="submit" class="btn">Submit (Demo)</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <address>
+      TuteDude — Contact: <a href="mailto:support@tutedude.example">support@tutedude.example</a><br />
+      Location: Virtual Classroom
+    </address>
+    <p>&copy; <time datetime="2025-11-27">2025</time> — Built by <strong>Order Yadav</strong>.</p>
+  </footer>
+</body>
+</html>
