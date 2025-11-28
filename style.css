@@ -1,0 +1,124 @@
+/* Simple presentational styles to make the demo readable */
+:root { 
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+    color: #222; 
+    line-height: 1.45; 
+}
+body { 
+    margin: 0; 
+    padding: 0 1rem 3rem; 
+    background: #f7f8fb; 
+}
+header, main, footer { 
+    max-width: 1100px; 
+    margin: 1.25rem auto; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 18px rgba(12,20,30,0.06); 
+    padding: 1.25rem; 
+}
+header { 
+    display: grid; 
+    gap: .75rem; 
+}
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+    display:flex; 
+    gap:.5rem; 
+    flex-wrap:wrap; 
+    margin:0; 
+}
+nav a { 
+    text-decoration:none; 
+    padding:.4rem .7rem; 
+    display:inline-block; 
+    border-radius:6px; 
+    background:#eef2ff; 
+    color:#1a3aa8; 
+    font-weight:600; 
+}
+.hero { 
+    display:flex; 
+    gap:1rem; 
+    align-items:center; 
+}
+figure { 
+    margin:0; 
+    max-width:480px; 
+}
+img { 
+    width:100%; 
+    height:auto; 
+    border-radius:8px; 
+    display:block; 
+}
+main { 
+    display:grid; 
+    gap:1rem; 
+}
+.grid-2 { 
+    display:grid; 
+    grid-template-columns: 1fr 320px; 
+    gap:1rem; 
+}
+article, section, aside { 
+    padding:.6rem; 
+}
+table { 
+    width:100%; 
+    border-collapse: collapse; 
+    margin-top:.5rem; 
+}
+th, td { 
+    border:1px solid #e5e7eb; 
+    padding:.5rem .6rem; 
+    text-align:left; 
+    vertical-align:top; 
+}
+thead th { 
+    background:#f1f5f9; 
+}
+tfoot td { 
+    background:#fcfcfd; 
+    font-weight:600; 
+}
+details summary { 
+    cursor: pointer; 
+    font-weight:600; 
+}
+form fieldset { 
+    border:1px dashed #dbeafe; 
+    padding: .75rem; 
+    border-radius:8px; 
+}
+.btn { 
+    background:#1a56db; 
+    color:#fff; 
+    border:none; 
+    padding:.6rem .9rem; 
+    border-radius:6px; 
+    font-weight:700; 
+    cursor:pointer; 
+}
+footer { 
+    font-size:.9rem; 
+    text-align:center; 
+}
+.meta { 
+    font-size:.9rem; 
+    color:#475569; 
+}
+.sr-only { 
+    position:absolute; 
+    left:-10000px; 
+    top:auto; 
+    width:1px; 
+    height:1px; 
+    overflow:hidden; 
+}
+/* responsive */
+@media (max-width:880px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  header, main, footer { padding: 1rem; }
+}
