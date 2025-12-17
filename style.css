@@ -21,23 +21,6 @@ header {
     display: grid; 
     gap: .75rem; 
 }
-nav ul { 
-    list-style: none; 
-    padding: 0; 
-    display:flex; 
-    gap:.5rem; 
-    flex-wrap:wrap; 
-    margin:0; 
-}
-nav a { 
-    text-decoration:none; 
-    padding:.4rem .7rem; 
-    display:inline-block; 
-    border-radius:6px; 
-    background:#eef2ff; 
-    color:#1a3aa8; 
-    font-weight:600; 
-}
 .hero { 
     display:flex; 
     gap:1rem; 
