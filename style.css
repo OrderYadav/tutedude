@@ -146,4 +146,4 @@ footer {
 @media (max-width:880px) {
   .grid-2 { grid-template-columns: 1fr; }
   header, main, footer { padding: 1rem; }
-}
+    }
