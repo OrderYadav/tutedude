@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,65 +7,177 @@
   <title>Welcome to TuteDute</title>
   <meta name="description" content="Welcome to TuteDude" />
   <!-- Link to external CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style1.css" />
 </head>
 <body>
   <!-- Assignment content remains identical to previous HTML -->
   <!-- HEADER -->
   <header role="banner" aria-label="TuteDude header">
-    <h1>Welcome to TuteDude</h1>
-    <p class="meta"><en>A project designed By <strong>TuteDude</strong>To learn HTML</en></p>
+    <h1>🌮 Welcome to TuteDude 🌮</h1>
+    <p class="meta"><en>A project designed By <strong>TuteDude</strong> To learn HTML</en></p>
     <p class="meta">Best TuteDude in town since 2021</p>
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#menu">Courses Menu</a></li>
-        <li><a href="#trivia">Trivia</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#trivia">Taco Trivia</a></li>
         <li><a href="#extras">Extras</a></li>
-        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#feedback">Feedback form</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="hero" aria-hidden="false">
       <figure>
         <img src="https://tutedude.com/favicon.ico" alt="TuteDude logo style hero image" />
         <figcaption>Welcome to TuteDude — Learn Web Development</figcaption>
-        <ul>
-          <li><a href="#">Back to Top</a></li>
-        </ul>
       </figure>
     </div>
   </header>
+  <hr>
   <!-- MAIN SECTION -->
   <main role="main">
     <!-- ABOUT SECTION -->
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About TD</h2>
+      <h2 id="about-heading">About <span class="dotted">TD</span></h2>
       <article>
-        <p>TD was founded in 2021. This Demo project was created by<strong>TuteDude</strong>for learning all major HTML tags.</p>
+        <p><span class="dotted">TD</span> was founded in 2021. This Demo project was created by<strong> TuteDude </strong>for learning all major HTML tags.</p>
         <blockquote>Level up your career with expert mentorship & internships for FREE
         </blockquote>
       </article>
     </section>
-    <hr>
     <!-- MENU & TRIVIA -->
     <div class="grid-2">
       <section id="menu" aria-labelledby="menu-heading">
-        <h2 id="menu-heading">Courses Menu</h2>
+        <h2 id="menu-heading">Our Menu</h2>
         <!-- Table code -->
+        
+        <table class="menu-table">
+        <tr>
+            <th colspan="6" class="main-head">TuteDude Complete Taco Menu</th>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <th>Type</th>
+            <th colspan="2">Small Portion</th>
+            <th colspan="2">Large Portion</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </tr>
+        <!-- Crunchy Items -->
+        <tr>
+            <td rowspan="3" class="category">TuteDude</td>
+            <td>Crunchy (Beef)</td>
+            <td>1</td>
+            <td>$1.50</td>
+            <td>3</td>
+            <td>$3.25</td>
+        </tr>
+        <tr>
+            <td>Crunchy (Chicken)</td>
+            <td>1</td>
+            <td>$1.75</td>
+            <td>3</td>
+            <td>$3.50</td>
+        </tr>
+        <tr>
+            <td>
+                Crunchy (Veggie)
+                <div class="nutrition-box">
+                    <strong>Nutrition Info</strong>
+                    <table>
+                        <tr><td>Nutrient</td><td>Value</td></tr>
+                        <tr><td>Calories</td><td>150 kcal</td></tr>
+                        <tr><td>Protein</td><td>5 g</td></tr>
+                        <tr><td>Fiber</td><td>4 g</td></tr>
+                    </table>
+                </div>
+            </td>
+            <td>1</td>
+            <td>$1.25</td>
+            <td>3</td>
+            <td>$3.00</td>
+        </tr>
+        <!-- Soft TuteDude -->
+        <tr>
+            <td rowspan="2" class="category">Soft TuteDude</td>
+            <td>Soft (Beef)</td>
+            <td>2</td>
+            <td>$3.50</td>
+            <td>4</td>
+            <td>$6.50</td>
+        </tr>
+        <tr>
+            <td>Soft (Veggie)</td>
+            <td>2</td>
+            <td>$3.00</td>
+            <td></td>
+            <td>$5.50</td>
+        </tr>
+        <!-- Combos Section -->
+        <tr>
+            <td rowspan="2" class="category">Combos</td>
+            <td>2 Crunchy + Drink</td>
+            <td colspan="2">$4.50</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>
+                2 Soft + Drink
+                <div class="nutrition-box">
+                    <strong>Combo Meals Nutrition Facts</strong>
+                    <table>
+                        <tr><td>Item</td><td>Calories</td><td>Sugar</td></tr>
+                        <tr><td>Soft Taco</td><td>200 kcal</td><td>2 g</td></tr>
+                        <tr><td>Drink</td><td>120 kcal</td><td>25 g</td></tr>
+                        <tr><td>Total</td><td>320 kcal</td><td>27 g</td></tr>
+                    </table>
+                </div>
+            </td>
+            <td colspan="2">$5.00</td>
+            <td colspan="2">N/A</td>
+        </tr>
+        <!-- Extras Section -->
+        <tr>
+            <td class="category">Extras</td>
+            <td>Chips & Salsa</td>
+            <td colspan="4">$2.00</td>
+        </tr>
+    
+        <tr>
+            <td class="category"></td>
+            <td>Guacamole</td>
+            <td colspan="4">$1.50</td>
+        </tr>
+        <!-- Final Price Range -->
+        <tr>
+            <td colspan="6" class="avg-price">Average Meal Price Range: $2.00 – $6.50</td>
+        </tr>
+        </table>
+        <a href="#top">&uarr; Back to Top</a></li>
       </section>
-      <aside id="trivia" aria-labelledby="trivia-heading" role="complementary">
-        <h2 id="trivia-heading">Trivia</h2>
-        <!-- Details code -->
-      </aside>
     </div>
-
-    <!-- EXTRAS: media -->
-    <section id="extras" aria-labelledby="extras-heading">
-      <h2 id="extras-heading">Extras — Audio & Video Examples</h2>
+    <!-- MENU & TRIVIA -->
+      <section id="trivia" aria-labelledby="trivia-heading" role="complementary">
+        <h2 id="trivia-heading">Taco Trivia</h2>
+        <p><i class="fa-solid fa-play"></i> When did Tutedude first appear in the United State? </p>
+        <h2>Media Fun</h2>
+        <p>Listen to Taco Music</p>
       <audio controls>
         <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      </section>
+    <!-- EXTRAS: media -->
+    <section id="extras" aria-labelledby="extras-heading">
+
+      <h2 id="extras-heading">Watch Taco Video</h2>
       <video controls width="560" height="315">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         Your browser does not support the video element.
@@ -98,7 +211,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer role="contentinfo">
+  <footer id="contact" role="contentinfo">
     <address>
       TuteDude — Contact: <a href="mailto:support@tutedude.com">support@tutedude.com</a><br />
       Location: Uttar Pradesh
@@ -106,4 +219,4 @@
     <p>&copy; <time datetime="2025-11-27">2025</time> — Built by <strong>Order Yadav</strong>.</p>
   </footer>
 </body>
-</html>
+          </html>
